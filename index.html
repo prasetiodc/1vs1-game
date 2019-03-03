@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     	
+    <link rel="icon" type="image/png" href="img/title.png">
+    <title>Welcome to 1 vs 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id='container'>
+        <div id='heading'>
+            <div id='title'>
+                <img src='img/title.png'>
+            </div>
+        </div>
+        
+        <div id='card'>
+            <div class='box-card'>
+                <h2>Computer</h2>
+                <div class='image'>
+                    <img id='imageComputer' src='img/placeholder.png'>
+                </div>
+            </div>
+            <div class='box-card'>
+                <h2>Player</h2>
+                <div id='card-player' class='image'>
+                    <img id='imagePlayer' src='img/placeholder.png'>
+                </div>
+                <div>
+                    <select id='selectChoice' onchange='loadPlayer()'>
+                        <option value="img/placeholder.png" id='selected'>Select your Option:</option>
+                        <option value="img/human.png">Human</option>
+                        <option value="img/ant.png">Ant</option>
+                        <option value="img/elephant.png">Elephant</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id='bottom'>
+            <div class='box-bottom'>
+                <div id='tagCounterCom'><h2>Score</h2></div>
+                <div id='counterCom'><h2>0</h2></div>
+                <img id='statusCom' src=''>
+            </div>
+            <div id='tengah' class='box-bottom'>  
+                <img onclick="gameOn()" src='img/start.png'></a> 
+            </div>
+            <div class='box-bottom'>
+                <div id='tagCounterPlayer'><h2>Score</h2></div>
+                <div id='counterPlayer'><h2>0</h2></div>
+                <img id='statusPlayer' src=''>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
